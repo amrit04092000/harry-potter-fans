@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css"/>
     <title>Harry Potter Fan Page</title>
   </head>
   <body>
-    <nav class="navbar background">
-      <ul class="navList">
+    <nav class="navbar background heightNavResp">
+      <ul class="navList visibilityResp">
         <div class="logo"><img src="images/hp1.jpg" alt="Logo" /></div>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#service">Service</a></li>
         <li><a href="#contact">Contact us</a></li>
       </ul>
-      <div class="rightNav">
+      <div class="rightNav visibilityResp">
         <input type="text" name="search" id="search" />
         <button class="searchBtn btn-sm">Search</button>
+      </div>
+      <div class="burger" >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </nav>
     <section class="background firstSection">
@@ -98,11 +104,22 @@
         <img src="images/Ron_Weasley_poster.jpg" alt="" class="fluid" />
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
     <h2 class="textCenter">Contact Us</h2>
     <div class="form"> 
-      <input type="text" name="name" id="name">
+      
+      <input class="formInput" type="text" name="name" id="name" placeholder="Enter your Name">
+      <input class="formInput" type="number" name="phone" id="phone" placeholder="Enter your Phone Number">
+      <input class="formInput" type="text" name="mail" id="mail" placeholder="Enter your Name">
+      <textarea class="formInput" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate Your Concern"></textarea>
+      <button class="btn btnDark">Submit</button>
     </div>
     </section>
+    <footer>
+      <p class="textFooter">
+        Copyright &copy; 2025 - All right Reserved
+      </p>
+    </footer>
+    <script src="javascript/resp.js"></script>
   </body>
 </html>
